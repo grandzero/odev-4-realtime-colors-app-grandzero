@@ -2,4 +2,4 @@
 
 ## https://unruffled-shannon-4c3e8d.netlify.app/
 
-![][work.gif]
+![Alt Text](https://media.giphy.com/media/A0ls0vpwElrHBE6BdL/giphy.gif)
