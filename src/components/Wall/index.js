@@ -8,7 +8,7 @@ function Wall({items}) {
     const [x, setX] = useState(0);
     const [y, setY] = useState(0);
     //const [isTyping, setTyping] = useState(false);
-    const empty= ()=>{x;y;}
+    const empty= ()=>{console.log(x,y);}
     
     useEffect(
       () => {
