@@ -3,12 +3,12 @@ import WallContext from '../../Contexts/WallContext';
 import Input from './Input';
 import {v4} from 'uuid';
 import Header from '../Header';
-function Wall({items,setPositions}) {
-    const {setItems,setColor} = useContext(WallContext);  
+function Wall({items}) {
+    const {setItems} = useContext(WallContext);  
     const [x, setX] = useState(0);
     const [y, setY] = useState(0);
     //const [isTyping, setTyping] = useState(false);
-
+    const empty= ()=>{x;y;}
     
     useEffect(
       () => {
@@ -18,7 +18,7 @@ function Wall({items,setPositions}) {
           
         }
         const clicked = (e) => {
-            //console.log(e.path[0].nodeName == "INPUT");
+            //console.log(x,y,e.path[0].nodeName == "INPUT");
             //e.path[0].nodeName === "INPUT" && console.log("Clicked");
             //console.log(v4());
             e.path[0].nodeName === "HTML" && setItems(prev => [...prev,{labelId:v4(),x:e.x,y:e.y,fromMe:true,msg:""}]);

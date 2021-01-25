@@ -5,7 +5,7 @@ import {initSocket, disconnectSocket, subscribeToWall} from '../../sockets';
 
 
 function WallWrapper() {
-    const {items, setItems,name} = useContext(WallContext);
+    const {items, setItems} = useContext(WallContext);
     
     useEffect(() => {
         initSocket();
